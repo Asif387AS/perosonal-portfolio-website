@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+.sidebar{
+    position: absolute;
+    height: 100vh;
+    /* width: 13vw; */
+/* background-color: red; */
+background-color: rgb(160, 153, 153);
+transition: transform .3s ease-in;
+}
+.sidebar nav{
+    padding:22px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding:20px 0;
+}
+.sidebar nav a{
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    color: black;
+}
+.main{
+    /* background-color: brown; */
+    width: 90vw;
+}
+.main .infoContainer{
+    width:80vw;
+    height:58vh;
+    margin: 7rem 3rem;
+    display:flex;
+    /* background-color:pink; */
+    display:flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.devInfo .hello{
+font-size: 3.3rem;
+font-family:'Times New Roman', Times, serif;
+color: gray;
+}
+.devInfo .name{
+    font-size: 3.1rem;
+    font-weight: bold;
+
+}
+
+.devInfo .about{
+    font-size: 2.5rem;
+    color: gray;
+}
+.devInfo .moreabout{
+    font-size: 1.8px;
+}
+.buttons{
+    margin-top: 34px;
+}
+.buttons button{
+  padding:2px 5px;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 3px;
+  cursor: pointer;
+  color: white;
+  background-color:dodgerblue;
+}
+.buttons button:hover{
+    background-color: white;
+    color:dodgerblue;
+}
+.main .infoContainer .devPic img{
+    width: 13rem;
+    /* height: 30.5rem; */
+    height:58vh;
+}
+
+
+/* contact page styling  */
+.contactform{
+    padding-top: 144px;
+    /* padding:0 34px; */
+    margin-left: 34px;
+    margin:0 88px;
+
+}
+.contactform h1{
+    /* text-align: center; */
+    padding:12px 0;
+}
+.contactform div{
+    padding:10px 0;
+    display:flex;
+    flex-direction: column;
+}
+.contactform div input{
+    width: 26vw;
+    padding: 3px;
+    border-radius: 5px;
+    margin:6px 0 0 0;
+}
+#formcheck{
+    flex-direction: row;
+}
+#formcheck input{
+    width: 24px;
+    margin:3px 0;
+}
+.form-text{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding:3px 0 0 0;
+}
+
+.contactform .btndiv{
+    width:7rem;
+    height: 5px;
+    margin:5px 0;
+
+}
+
+
+/* Blog page styling  */
+.blogContainer{
+    margin:88px;
+}
+
+.blogItem{
+margin: 20px;
+}
+ h1{
+ margin:5px 0;
+}
+ h2{
+ margin:5px 0;
+}
+ p{
+    margin:5px 0;
+}
+.intro{
+    margin:35px 35px;
+    margin:88px;
+}
+.skill{
+    width:265px;
+    height:6px;
+    background-color:red;
+    border: 2px solid black;
+    text-align: center;S
+}
+.skillContainer{
+    padding:12px;
+}
+.skillItem{
+    display:flex;
+    align-items: center;
+    font-weight: 900;
+    width:30vw;
+    background-color:gray;
+    margin-bottom: .3rem;
+    border-radius: .7rem;
+    padding-left: .4rem;
+    justify-content:flex-start
+}
+
+.hundred{
+    width:265px;
+    background-color:yellow;
+}
+.eighty{
+    width: 200px;
+    background-color:blue;
+}
+.seventy{
+    width: 150px;
+    background-color:rgb(62, 139, 190);
+}
+.fifty{
+    width: 130px;
+    background-color:rgb(190, 62, 111);
+}
+.t5{
+    width: 100px;
+    background-color:rgb(94, 177, 16);
+}
+
+
+.main .ham{
+    width:2rem;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color:black;
+}
+.main .cross{
+    width:2rem;
+    position:absolute;
+    top: 10px;
+    left: 121px;
+    background-color:black;
+ 
+}
+.sidebarGo{
+       transform: translate(-443px,0px); */
+        position: absolute;
+}
+/* media queiries  */
+@media (max-width:1615px) {
+    *{
+        /* background-color:red; */
+    }
+    .sidebar{
+        /* transform: translate(-443px,0px); */
+        /* position: absolute; */
+    }
+    .devPic img{
+        display:none;
+    }
+    .infoContainer{
+        padding: 56px 8px;
+        margin:56px 8px;
+    }
+    .blogContainer{
+        margin:56px 8px;
+
+    }
+    .intro{
+        margin:56px 8px;
+
+    }
+    .contactform{    
+        margin:56px 8px;
+        padding-top: 0;
+
+    }
